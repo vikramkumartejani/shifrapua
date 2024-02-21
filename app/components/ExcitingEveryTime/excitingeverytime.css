@@ -22,11 +22,12 @@
 
 .excitingeverytime-box {
     position: relative;
-    width: 100%;
+    width: calc(50% - 10px); 
     max-width: 260px;
     height: 175px;
     background-size: cover;
     transition: opacity 3s ease;
+    text-align: center;
  }
 
 .excitingeverytime-box1 {
@@ -83,3 +84,8 @@
         justify-content: center;
     }
 }
+@media screen and (min-width: 786px) {
+    .excitingeverytime-box {
+        width: calc(50% - 10px); 
+     }
+  }
