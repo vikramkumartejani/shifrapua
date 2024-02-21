@@ -65,11 +65,11 @@ export const ActivityStreets = () => {
         </h3>
 
         <div className="pages-links">
-          <Link href="/" className="link-one">
+          <Link href="/donation" className="link-one">
             <TiHeartFullOutline />
             לתרומה - לחצי כאן{" "}
           </Link>
-          <Link href="/" className="link-two">
+          <Link href="/sheprapuavol" className="link-two">
             <TiHeartFullOutline />
             התנדבות - לחצי כאן
           </Link>

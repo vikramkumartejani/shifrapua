@@ -1,12 +1,12 @@
-import React from 'react'
-import './about.css'
-import { ActivityStreets } from '../components/ActivityStreets/ActivityStreets'
-import AboutContent from '../components/AboutContent/AboutContent'
+import React from "react";
+import "./sheprapuavol.css";
+import { ActivityStreets } from "../components/ActivityStreets/ActivityStreets";
+import ShepraPuaVolCompo from "../components/ShepraPuaVolCompo/ShepraPuaVolCompo";
 
-const About = () => {
+const ShepraPuaVol = () => {
   return (
     <div>
-     <section className="about-container">
+      <section className="about-container">
         <div className="overlay-container"></div>
         <div class="elementor-shape elementor-shape-bottom">
           <svg
@@ -23,13 +23,13 @@ const About = () => {
           </svg>
         </div>
         <div className="content-hero">
-          <h3>אודות</h3>
-         </div>
+          <h3>התנדבות בשפרה ופועה</h3>
+        </div>
       </section>
-      <AboutContent/>
+      <ShepraPuaVolCompo/>
       <ActivityStreets/>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default About
+export default ShepraPuaVol;
