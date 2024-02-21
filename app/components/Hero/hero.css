@@ -1,0 +1,113 @@
+.hero-container {
+  background-image: url("../../../public/assets/hero.jpg");
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.73);
+  width: 100%;
+  opacity: 0.41;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.elementor-shape-bottom {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.elementor-shape-bottom {
+  bottom: -2px;
+}
+
+.elementor-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+}
+
+.elementor-shape svg {
+  display: block;
+  width: -webkit-calc(100% + 1.3px);
+  width: calc(100% + 1.3px);
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.elementor-shape-bottom svg {
+  height: 55px;
+}
+
+.content-hero {
+  padding: 0 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  font-size: 50px;
+  margin-top: 11rem;
+  z-index: 10;
+}
+
+.content-hero h3 {
+  font-weight: 500;
+}
+
+.content-hero p {
+  font-weight: 500;
+  margin-top: .7rem;
+  font-size: 40px;
+}
+
+.hero-link {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--turquoise);
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  padding: 21px 70px 21px 70px;
+  transition: background-color .4s ease;
+
+}
+
+.hero-link:hover {
+  background-color: #f5b0b0;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-hero {
+    font-size: 30px;
+  }
+
+  .content-hero p {
+    font-size: 20px;
+  }
+
+  .hero-link {
+    padding: 10px 20px;
+  }
+}

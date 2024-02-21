@@ -1,0 +1,74 @@
+.donationroutes-container{
+    background-image: url("../../../../public/assets/hero.jpg");
+    height: 80vh;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.73);
+    width: 100%;
+    opacity: 0.3;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  }
+
+  .content-hero {
+    padding: 0 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 50px;
+    margin-top: 8rem;
+    z-index: 10;
+  }
+
+  .content-hero h3{
+     font-size: 60px;
+     color: white;
+  }
+
+  .elementor-shape-bottom {
+    bottom: -1px;
+}
+.elementor-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+}
+.elementor-shape-bottom svg {
+  height: 50px;
+}
+.elementor-shape svg {
+  display: block;
+  width: -webkit-calc(100% + 1.3px);
+  width: calc(100% + 1.3px);
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.elementor-shape .elementor-shape-fill {
+  fill: #fff;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}

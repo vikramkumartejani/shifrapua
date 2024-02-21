@@ -1,0 +1,139 @@
+.sheprapuarehovot-container {
+        height: 100%;
+        max-width: 1140px;
+        margin: auto;
+        width: 100%;
+        background-color: white;
+        padding: 0 4px;
+}
+
+.heading-sheprapuarehovot {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 40px;
+        color: var(--dark_black_100);
+        font-weight: 500;
+}
+
+.boxes-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding: 3rem 1rem;
+}
+
+.boxes-container .box-container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+}
+
+.boxes-container .box-container h3 {
+        font-size: 25px;
+        color: var(--turquoise);
+        font-weight: 500;
+}
+
+.boxes-container .box-container p {
+        line-height: 1.4;
+        font-size: 16px;
+        color: var(--dark_black_200);
+}
+
+.boxes-container .box-container .link-page {
+        background-color: var(--turquoise);
+        color: white;
+        font-weight: 500;
+        font-size: 13px;
+        padding: 10px 20px;
+        border-radius: 2px;
+        transition: background-color .4s ease;
+
+}
+
+.boxes-container .box-container .link-page:hover {
+        background-color: var(--red_100);
+}
+
+.sheprapuarehovot-container2 {
+        background-image: url("../../../public/assets/sheprapuarehovot-container2.jpg");
+        height: 60vh;
+        position: relative;
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.overlay-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.73);
+        width: 100%;
+        opacity: 0.41;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.elementor-shape-top {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+}
+
+.elementor-shape-top {
+        top: -1px;
+}
+
+
+.elementor-shape-top svg {
+        height: 55px;
+}
+
+.content-sheprapuarehovot {
+        padding: 0 6px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: white;
+        font-size: 50px;
+        z-index: 10;
+}
+
+
+.content-sheprapuarehovot p {
+        font-size: 40px;
+        color: white;
+        font-weight: 400;
+}
+
+.content-sheprapuarehovot h4 {
+        margin-top: 1rem;
+        font-size: 16px;
+        color: var(--turquoise);
+        font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+        .heading-sheprapuarehovot {
+                font-size: 32px;
+        }
+
+        .boxes-container {
+                flex-direction: column;
+        }
+
+        .sheprapuarehovot-container2 {
+                height: 90vh;
+        }
+}

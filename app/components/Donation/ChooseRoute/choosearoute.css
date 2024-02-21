@@ -1,0 +1,178 @@
+.chooseroute-container {
+    padding: 20px 0 5rem 0px;
+}
+
+.chooseroute-container h4 {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+}
+
+.donation-tabs {
+    background-color: var(--white_200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: .5rem;
+    max-width: 350px;
+    margin: .5rem auto;
+    border-radius: 2em;
+}
+
+.donation-tabs .donation-tab {}
+
+.donation-tabs .donation-tab .tab-btn {
+    font-weight: 400;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    padding: .2rem;
+    /* background-color: ; */
+    padding: 5px 10px;
+    margin: 8px 5px;
+}
+
+.donation-tab.active1 button {
+    border-radius: 2em;
+    background-color: var(--dark_black_400);
+    color: white;
+}
+
+.donation-tab.active2 button {
+    border-radius: 2em;
+    background-color: var(--red_100);
+    color: white;
+}
+
+.donation-tab.active3 button {
+    border-radius: 2em;
+    background-color: var(--yellow);
+    color: white;
+}
+
+.tabs-content-container {
+    width: 100%;
+    max-width: 310px;
+    margin: auto;
+}
+
+.tab-content-container {
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 43px -1px rgba(0, 0, 0, 0.36);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 12px 0px;
+}
+
+.tab-content-container1 {
+    padding: 8px 0;
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: var(--dark_black_400);
+}
+
+.tab-content-container1 h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.tab-content-container1 h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.tab-content-container1 p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.bottom-content {
+    padding-top: 1rem;
+}
+
+.bottom-content h3 {
+    font-weight: 500;
+    color: #54595f;
+    font-size: 20px;
+}
+
+.bottom-content p {
+    color: #54595f;
+    font-weight: 300;
+    font-size: 16px;
+    padding-top: 1rem;
+}
+
+.bottom-content .line {
+    width: 50px;
+    height: 1px;
+    display: flex;
+    margin: .8rem auto;
+    background: #000;
+    text-align: center;
+}
+
+.donation-form-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    background-color: var(--turquoise);
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: background-color .4s ease;
+    padding: 12px 24px;
+    width: 270px;
+    margin: auto;
+}
+
+.tab-content-container2 {
+    padding: 8px 0;
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: var(--red_100);
+}
+
+.tab-content-container2 h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.tab-content-container2 p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.tab-content-container3 {
+    padding: 8px 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: var(--yellow);
+    color: black;
+}
+
+.tab-content-container3 h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.tab-content-container3 p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.tab-content-container h4 {
+    color: white;
+    text-align: center;
+    color: white;
+}
+
+.tab-content-container .tab-content-container3 h4 {
+    text-align: center;
+    color: black;
+}

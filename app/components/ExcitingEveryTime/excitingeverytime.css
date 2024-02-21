@@ -1,0 +1,85 @@
+.excitingeverytime-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    padding: 15px 6px;
+}
+
+.excitingeverytime-container h2 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+    color: var(--dark_black_200);
+    margin-bottom: .5rem;
+}
+
+.excitingeverytime-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.excitingeverytime-box {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    height: 175px;
+    background-size: cover;
+    transition: opacity 3s ease;
+ }
+
+.excitingeverytime-box1 {
+    background-image: url(../../../public/assets/excitingeverytime2.jpg);
+}
+
+.excitingeverytime-box2 {
+    background-image: url(../../../public/assets/excitingeverytime3.jpg);
+}
+
+.excitingeverytime-box3 {
+    background-image: url(../../../public/assets/excitingeverytime1.jpg);
+}
+
+.excitingeverytime-box4 {
+    background-image: url(../../../public/assets/excitingeverytime4.jpg);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.73);
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.excitingeverytime-box .content {
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10000;
+    transition: opacity 1s ease;
+    font-size: 1.7rem;
+}
+
+.excitingeverytime-box .content h6 {
+    display: none;
+}
+
+.excitingeverytime-box.hovered .content h6 {
+    display: block;
+    color: white;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .excitingeverytime-boxes {
+        justify-content: center;
+    }
+}

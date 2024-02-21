@@ -1,0 +1,144 @@
+.activitystreets-container {
+    background-image: url(/assets/activity.jpg);
+    background-position: center center;
+    width: 100%;
+    position: relative;
+    background-size: contain;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding-top: 90px;
+}
+
+.elementor-shape-top1 {
+    top: -1px;
+}
+
+.elementor-shape-top1 svg {
+    height: 50px;
+}
+
+.elementor-shape .elementor-shape-fill {
+    fill: #fff;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.activity-content {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+}
+
+.activity-content h2 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.elements-boxes {
+    width: 100%;
+    max-width: 670px;
+    display: flex;
+    margin: 1rem auto 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+.elements-box {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 0px 27px 1px rgba(0, 0, 0, 0.13);
+}
+
+.elements-box h3 {
+    color: var(--turquoise);
+    font-size: 41px;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.elements-box p {
+    font-size: 19px;
+}
+
+.elementor-headline {
+    padding: 20px;
+    color: black;
+    font-weight: 400;
+    font-size: 38px;
+}
+
+.logo-take-part {
+    position: relative;
+}
+
+.elementor-headline .take-part {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.pages-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 40px 0;
+}
+
+.pages-links .link-one {
+    background-color: var(--turquoise);
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    border-radius: 4px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    transition: background-color 0.3s ease;
+}
+
+.pages-links .link-one:hover {
+    background-color: black;
+
+}
+
+.pages-links .link-two {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: #afadaa;
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    padding: 15px 30px;
+}
+
+.pages-links .link-two:hover {
+    background-color: black;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .elements-boxes {
+        max-width: 95%;
+        flex-wrap: wrap;
+    }
+
+    .elementor-headline {
+        font-size: 29px;
+    }
+
+    .elementor-headline .take-part {
+        font-size: 29px;
+    }
+    .pages-links {
+        flex-direction: column;
+    }
+}

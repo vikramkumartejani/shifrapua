@@ -1,0 +1,144 @@
+.nav-container {
+  padding: 8px 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: height 0.3s ease;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.nav-container.scrolled {
+  height: 60px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   transition: height 1s ease, box-shadow 1s ease;
+}
+
+.donation-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--turquoise);
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: background-color .4s ease;
+  padding: 12px 24px;
+  width: 127px;
+}
+
+.donation-link:hover {
+  background-color: var(--red_100);
+}
+
+.heart-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.links-container .links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.links-container .links li a{
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--dark_black);
+}
+
+.links-container .links li a:hover {
+  color: var(--turquoise);
+}
+.active a {
+  color: red;
+}
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  background-color: var(--turquoise);
+  color: white;
+  border-radius: 3px;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.menu-icon {
+  display: none;
+  width: 48px;
+  height: 42px;
+}
+
+@media screen and (max-width: 1250px) {
+  .nav-container {
+    padding: 16px 2rem;
+  }
+
+  .links-container {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .links-container .links {
+    display: none;
+  }
+
+  .nav-container {
+    flex-direction: row-reverse;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+.logo-image {
+  width: auto;
+  height: 150px;
+  min-height: 60px;
+}
+@media screen and (max-width: 500px) {
+  .logo-image {
+    width: auto;
+    height: 60px;
+  }
+
+  .nav-container {
+    padding: 10px 1rem;
+  }
+
+  .donation-link {
+    padding: 4px 6px;
+    gap: 0.2rem;
+    width: 90px;
+  }
+
+  .menu-icon {
+    width: 30px;
+    height: 25px;
+  }
+
+  .menu-container {
+    gap: 0.2rem;
+  }
+}
