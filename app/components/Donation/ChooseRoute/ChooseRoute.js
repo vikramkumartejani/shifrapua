@@ -39,7 +39,7 @@ const ChooseRoute = () => {
               <h3>מקבלת במתנה:</h3>
               <p>כף כסף לעוגה</p>
  			<span class="line"></span>
-             <a href="/donation" className="donation-form-link"><TiHeartFullOutline className="heart-icon" />לבחירה במסלול זה - לחצו כאן</a>
+             <a href="/goldenpath" className="donation-form-link"><TiHeartFullOutline className="heart-icon" />לבחירה במסלול זה - לחצו כאן</a>
             </div>
           </div>
         )}
@@ -54,7 +54,7 @@ const ChooseRoute = () => {
               <h3>מקבלת במתנה:</h3>
               <p>כלי מכסף לבשמים</p>
  			<span class="line"></span>
-             <a href="/donation" className="donation-form-link"><TiHeartFullOutline className="heart-icon" />לבחירה במסלול זה - לחצו כאן</a>
+             <a href="/goldenpath" className="donation-form-link"><TiHeartFullOutline className="heart-icon" />לבחירה במסלול זה - לחצו כאן</a>
             </div>
           </div>
         )}
@@ -69,7 +69,7 @@ const ChooseRoute = () => {
               <h3>מקבלת במתנה:</h3>
               <p>סיר מעוצב של ׳נעמן׳</p>
  			<span class="line"></span>
-             <a href="/donation" className="donation-form-link"><TiHeartFullOutline className="heart-icon" />לבחירה במסלול זה - לחצו כאן</a>
+             <a href="/goldenpath" className="donation-form-link"><TiHeartFullOutline className="heart-icon" />לבחירה במסלול זה - לחצו כאן</a>
             </div>
           </div>
         )}

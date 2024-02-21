@@ -50,8 +50,7 @@ export const ActivityStreets = () => {
       <div className="activity-content">
         <h2>פעילות ׳שפרה ופועה׳ ברחובות בשנה החולפת:</h2>
         <div className="elements-boxes">
-          {/* Use CounterBox component for each counter with different interval durations */}
-          <CounterBox initialValue={87} label="מתנדבות" intervalDuration={100} />
+           <CounterBox initialValue={87} label="מתנדבות" intervalDuration={100} />
           <CounterBox initialValue={5340} label="ארוחות חולקו" intervalDuration={1} />
           <CounterBox initialValue={2423} label="שעות התנדבות" intervalDuration={1} />
           <CounterBox initialValue={178} label="יולדות בשנה" intervalDuration={80} />
