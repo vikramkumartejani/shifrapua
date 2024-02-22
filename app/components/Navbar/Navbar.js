@@ -66,18 +66,7 @@ const Navbar = () => {
                 </ul>
             )}
         </li>
-          <li className="expandable" onClick={toggleSubLinks}>
-                <a href="/about">אודותינו</a>
-                {showSubLinks && (
-                    <ul className="sub-links">
-                        <li><a href="/team">צוות</a></li>
-                        <li><a href="/mission">משימה</a></li>
-                        <li><a href="/history">היסטוריה</a></li>
-                        <li><a href="/values">ערכים</a></li>
-                        <li><a href="/awards">פרסים</a></li>
-                    </ul>
-                )}
-            </li>
+        
           <li><a href="/">דף הבית</a></li>
         </ul>
         <div className="">
