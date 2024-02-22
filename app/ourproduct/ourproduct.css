@@ -204,4 +204,10 @@
     .box-ourproduct .para {
         width: 100%;
     }
+    .image-box-ourproduct .contentbox {
+        font-size: 1.3rem;
+    }
+    .box-ourproduct {
+        padding: 25px;
+    }
 }
