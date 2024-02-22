@@ -16,7 +16,7 @@ const ChooseRoute = () => {
       <h4 className="">בחרו מסלול:</h4>
       {/* tabs */}
       <div className="donation-tabs">
-      <div className={`donation-tab   ${activeTab === 1 ? 'active1' : ''}`}>
+            <div className={`donation-tab   ${activeTab === 1 ? 'active1' : ''}`}>
                 <button className='tab-btn' onClick={() => handleTabClick(1)}>מסלול כסף</button>
             </div>
             <div className={`donation-tab ${activeTab === 2 ? 'active2' : ''}`}>

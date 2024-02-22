@@ -12,7 +12,7 @@
 }
 
 .nav-container.scrolled {
-  height: 60px;
+  height: 90px;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
    transition: height 1s ease, box-shadow 1s ease;
 }
@@ -42,9 +42,7 @@
 .sub-links {
   display: none;
 }
-.expandable li{
-   
-}
+
 
 .expandable:hover .sub-links {
   background-color: white;
@@ -153,11 +151,7 @@
   }
 }
 
-.logo-image {
-  width: auto;
-  height: 150px;
-  min-height: 60px;
-}
+ 
 @media screen and (max-width: 500px) {
   .logo-image {
     width: auto;

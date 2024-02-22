@@ -13,6 +13,7 @@ const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const [showSubLinks, setShowSubLinks] = useState(false);
+  const [logoHeight, setLogoHeight] = useState(160); 
 
 
   const handleToggleMenu = () => {
@@ -22,7 +23,8 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      setIsScrolled(scrollTop > 10);
+      setIsScrolled(scrollTop > 100);
+      setLogoHeight(scrollTop > 10 ? 70 : 160); // Change logo height based on scroll position
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -73,8 +75,8 @@ const Navbar = () => {
           <a href="/">
             <Image
               src="/assets/Logo.png"
-              width={150}
-              height={160}
+              width={logoHeight}
+              height={logoHeight} 
               alt="Logo"
               className="logo-image"
             />

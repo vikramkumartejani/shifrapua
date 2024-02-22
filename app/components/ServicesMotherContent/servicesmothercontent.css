@@ -27,11 +27,9 @@
     font-weight: 500;
     text-align: right;
 }
-
 .tabs-content .button1 {
-    width: 100%;
-     text-align: center;
-    border: none;
+   width:100%;
+     border: none;
     font-size: 1.3rem;
     font-weight: 400;
     color: #ffffff;
@@ -129,6 +127,7 @@
 
 .tabs ul li {
     padding: 15px;
+    font-size: 16px;
 }
 
 .tabs ul li:hover {
@@ -167,7 +166,7 @@
         padding: 10px 25px;
     }
     .tabs ul li {
-        padding: 12px 23px;
+        padding: 7px 10px;
         font-size: 18px;
     }
 } 

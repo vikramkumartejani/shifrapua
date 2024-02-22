@@ -20,7 +20,9 @@
     border-radius: 2em;
 }
 
-.donation-tabs .donation-tab {}
+.donation-tabs .donation-tab {
+    margin: 5px 0;
+ }
 
 .donation-tabs .donation-tab .tab-btn {
     font-weight: 400;
@@ -28,24 +30,25 @@
     border: none;
     cursor: pointer;
     padding: .2rem;
-    /* background-color: ; */
+    color: black;
+    background-color: transparent;
     padding: 5px 10px;
     margin: 8px 5px;
 }
 
-.donation-tab.active1 button {
+.donation-tab.active1   {
     border-radius: 2em;
     background-color: var(--dark_black_400);
     color: white;
 }
 
-.donation-tab.active2 button {
+.donation-tab.active2   {
     border-radius: 2em;
     background-color: var(--red_100);
     color: white;
 }
 
-.donation-tab.active3 button {
+.donation-tab.active3   {
     border-radius: 2em;
     background-color: var(--yellow);
     color: white;
