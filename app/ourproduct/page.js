@@ -1,9 +1,19 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import "./ourproduct.css";
 import { ActivityStreets } from "../components/ActivityStreets/ActivityStreets";
 import ExcitingEveryTime from "../components/ExcitingEveryTime/ExcitingEveryTime";
-
+ 
 const OurProduct = () => {
+  const [hoveredBox, setHoveredBox] = useState(null);
+
+  const handleMouseEnter = (boxNumber) => {
+    setHoveredBox(boxNumber);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredBox(null);
+  };
   return (
     <div>
       <section className="ourproducts-container">
@@ -31,8 +41,25 @@ const OurProduct = () => {
       </section>
       <div className="ourproucts-content">
         <h2>אנו שמחות להציג את המוצרים הדיגיטליים של שפרה ופועה ברחובות:</h2>
-        <div>
-          
+        <div className="box-ourproduct ">
+          <div 
+              className={`image-box-ourproduct  ${
+                hoveredBox === 1 ? "hovered" : ""
+              }`}
+              onMouseEnter={() => handleMouseEnter(1)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="overlay"></div>
+              <div className="contentbox">
+                <p>להורדת חוברת המתכונים</p>
+                {hoveredBox === 1 && <h6>לחצי כאן</h6>}
+              </div>
+          </div>
+          <div className="para">
+            <h2>שפרה ופועה רחובות –</h2>
+            <h3>חוברת המתכונים</h3>
+            <p>חוברת המתכונים של שפרה ופועה ברחובות. לחצי על התמונה של החוברת – לצפייה והורדה.</p>
+          </div>
         </div>
       </div>
       <ExcitingEveryTime />
@@ -42,3 +69,7 @@ const OurProduct = () => {
 };
 
 export default OurProduct;
+
+
+
+ 

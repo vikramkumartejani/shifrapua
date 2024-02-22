@@ -78,17 +78,126 @@
     transform: rotateY(0deg);
 }
 
-.ourproucts-content{
+.ourproucts-content {
     width: 100%;
     max-width: 1140px;
     padding: 3rem 6px;
     margin: auto;
 }
 
-.ourproucts-content h2{
-     font-size: 20px;
-     font-weight: 300;
-     text-align: center;
-     color: black;
+.ourproucts-content h2 {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: black;
 }
 
+.box-ourproduct {
+    width: 100%;
+    max-width: 940px;
+    margin: 3rem auto;
+    background-image: linear-gradient(180deg, #ffffff 0%, #fef8f8 100%);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box-ourproduct .para {
+    text-align: right;
+    width: 50%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+}
+.box-ourproduct .para h2{
+font-size: 25px;
+color: black;
+font-weight: 400;
+}
+.box-ourproduct .para h3{
+font-size: 25px;
+ font-weight: 500;
+color: var(--turquoise);
+}
+    
+.box-ourproduct .para p{
+     font-size: 16px;
+     font-weight: 400;
+     color: var(--dark_black_200);
+     line-height: 29px;
+}
+
+.box-ourproduct:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+}
+
+.image-box-ourproduct {
+    background-image: url(../../public/assets/ourproductimage.jpg);
+    width: 50%;
+    position: relative;
+     max-width: 380px;
+    height: 255px;
+    background-size: cover;
+    transition: opacity 3s ease;
+    text-align: center;
+}
+
+.image-box-ourproduct .contentbox {
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10000;
+    transition: opacity 1s ease;
+    font-size: 1.7rem;
+}
+
+.image-box-ourproduct .contentbox h6 {
+    display: none;
+}
+
+.image-box-ourproduct.hovered .contentbox h6 {
+    display: block;
+    color: white;
+    margin-top: 4rem;
+    font-weight: 300;
+}
+
+.image-box-ourproduct h2 {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.73);
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .box-ourproduct {
+        flex-direction: column  ;
+    }
+    .image-box-ourproduct {
+         width: 100%;
+        
+    }
+    .box-ourproduct .para {
+        width: 100%;
+    }
+}

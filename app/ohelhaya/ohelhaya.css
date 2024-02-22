@@ -1,0 +1,166 @@
+.ohelhaya-container {
+    background-image: url("../../public/assets/hero.jpg");
+    height: 80vh;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.73);
+    width: 100%;
+    opacity: 0.3;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.content-hero {
+    padding: 0 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 50px;
+    margin-top: 8rem;
+    z-index: 10;
+}
+
+.content-hero h3 {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+}
+
+.elementor-shape-bottom {
+    bottom: -1px;
+}
+
+.elementor-shape {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+}
+
+.elementor-shape-bottom svg {
+    height: 50px;
+}
+
+.elementor-shape svg {
+    display: block;
+    width: -webkit-calc(100% + 1.3px);
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.elementor-shape .elementor-shape-fill {
+    fill: #fff;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.ohelhayacontent-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 3rem auto;
+}
+
+.ohelhayacontent-container .title {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 3rem auto;
+    color: black;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 300;
+}
+
+.ohelhaya-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: end;
+}
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: end;
+    width: 60%
+}
+
+.faq-content h2 {
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.faq-container {
+    padding-right: 1rem;
+    text-align: right;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.headingfaq {
+    display: flex;
+    font-size: 16px;
+    text-align: right;
+    align-items: center;
+    gap: .8rem;
+    color: var(--turquoise);
+}
+
+.headingfaq span {
+    font-weight: 500;
+}
+
+.decs-faq {
+    font-size: 16px;
+    line-height: 29px;
+    text-align: end;
+    margin: 2rem 0;
+    color: var(--dark_black_200);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .ohelhaya-content {
+        flex-direction: column-reverse;
+    }
+
+    .faq-content {
+        width: 100%;
+    }
+    .image-ohelhaya{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .image-ohelhaya .ohelhaya{
+         width: 310px;
+    }
+}
