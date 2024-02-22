@@ -16,6 +16,7 @@ const AboutContent = () => {
   const handleClick2 = () => {
     setShowMore2(!showMore2);
   };
+  
   const handleClick3 = () => {
     setShowMore3(!showMore3);
   };

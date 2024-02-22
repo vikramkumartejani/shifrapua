@@ -1,12 +1,25 @@
-import React from "react";
-import './ourvolunteers.css'
+"use client";
+import React, { useState } from "react";
+import "./ourvolunteers.css";
 import { ActivityStreets } from "../components/ActivityStreets/ActivityStreets";
 import ExcitingEveryTime from "../components/ExcitingEveryTime/ExcitingEveryTime";
+import Link from "next/link";
+import Image from "next/image";
 
 const OurVolunteers = () => {
+  const [showMore1, setShowMore1] = useState(false);
+  const [showMore2, setShowMore2] = useState(false);
+
+  const handleClick1 = () => {
+    setShowMore1(!showMore1);
+  };
+
+  const handleClick2 = () => {
+    setShowMore2(!showMore2);
+  };
   return (
     <div>
-     <section className="ourvolunteers-container">
+      <section className="ourvolunteers-container">
         <div className="overlay-container"></div>
         <div
           class="elementor-shape elementor-shape-bottom"
@@ -31,12 +44,98 @@ const OurVolunteers = () => {
       </section>
       <div className="ourvolunteers-content-container">
         <h2>אנו מזמינים אתכם להכיר את המתנדבות של שפרה ופועה ברחובות</h2>
-        <div className='slider-container'>
+        {/* <div className='slider-container'>
           <h2  >הכרת הטוב (המתנדבות שלנו) </h2>
+        </div> */}
+        <div className="donation-link-page">
+          <Link href="/sheprapuavol" className="link-dontaion-page">
+            רוצה להיות מתנדבת? לחצי כאן
+          </Link>
+        </div>
+        <div className="volunteers-boxes">
+          <div className="volunteers-box">
+            <div className="" >
+              <Image
+                src="/assets/ourvolunteers1.jpg"
+                 alt="Image"
+                 className="image-child"
+                width={500}
+                height={429}
+              />
+            </div>
+            <div className="box-content">
+              <h5>הכירו את המתנדבת:</h5>
+              <h3>אורנית ביטקין</h3>
+              <div className="lines">
+                <span className="line"></span>
+              </div>
+              <h2>ב"ה זכיתי להכנס לארגון שפרה ופועה לפני כ10 שנים, </h2>
+              <p className="marginB">
+                רות בן שמש עיניינה אותי בהתרגשות בפרוייקט החדש שעומד על הפרק-
+                "ארוחות בוקר ליולדות" וניכנסתי כאחת המבשלות הראשונות. הכנתי
+                ארוחות בוקר במשך כ 4-5 שנים (עם חופשות לידה מידי פעם ב"ה).
+              </p>
+              {showMore1 && (
+                <>
+                  <p className="marginB"> היום אני מנהלת את תחום ארוחות הבוקר יחד עם רבקה לוין, אני רואה את החלק שלי בארגון כזכות גדולה מאוד שנפלה עלי מכמה הבטים: </p>
+                  <p className="marginB"> זכות ליהיות חלק ממפעל  של הרבי' ומפעל כזה שהרבי' ייחס לו כזו חשיבות רבה!   </p>
+                  <p className="marginB">  זכות להמשיך את מעשה אדמוה"ז בדאגה ליולדות ונתינת כוח להתאוששות מהירה יותר וחזרה לשליחות המרכזית – גידול ילדים. </p>
+                  <p className="marginB">  זכות שאני שייכת לארגון שמתעסק בטוב הנראה והניגלה ממש – יולדות, תינוקות רכים. </p>
+                </>
+              )}
+              {showMore1 ? (
+                <div className="readmore-btn">
+                  <button onClick={handleClick1}>קראו עוד </button>
+                </div>
+              ) : (
+                <div className="readmore-btn">
+                  <button onClick={handleClick1}>קראו עוד </button>
+                </div>
+              )}
+            </div>
+          </div>
+          <div className="volunteers-box">
+               
+             <div className="box-content">
+              <h5>הכירו את המתנדבת:</h5>
+              <h3 className='paraghra'>רבקה לוין</h3>
+              <div className="lines">
+                <span className="line"></span>
+              </div>
+              <p>לארגון 'שפרה ופועה' הגעתי בהשגחה פרטית, אחראיות הארגון חיפשו מתנדבת להכנת ארוחת בוקר ליולדות ואני התנדבתי ונהנתי מעצם העשייה ומהרגשת הסיפוק מההתנדבות. </p>
+              <p>בהמשך פנו אלי שוב לתרום מזמני ולהתנדב רציתי מאוד אך לא הסתדר. לאחר מס' פניות לצרפני למעגל המתנדבות והרגשה לא נעימה שלי, חשבתי לעצמי איך אוכל להתנדב בצורה המתאימה עבורי. </p>
+              {showMore2 && (
+                <>
+                 <p>באותו זמן עבדתי בגני חב"ד נס ציונה ואחד התחומים שעליהם הייתי אחראית היה לדאוג למילוי מקום לצוות הגננות והסייעות. תחום דומה ישנו בארגון ארוחות הבוקר של 'שפרה ופועה' .. למצוא מבשלות/ נוהגות/ מחליפות.  הצעתי את עצמי לעזור בתחום זה.   </p>
+                 <p>בהשגחה פרטית מופלאה באותו הזמן אחת האחראיות (רות בן שמש) עברה לעיר אחרת. היא פנתה  אלי בהצעה להחליף – קיבלתי את ההצעה בשמחה.  </p>
+                 <p>מאז אני בארגון  מנהלת מידי יום את תחום ארוחות הבוקר ליולדות יחד עם אורנית ביטקין האחראית והמסורה (חוץ מחופשות הלידה 😉 בהן אני מקבלת חזרה).</p>
+                 <p>זו זכות גדולה בעבורי לקחת חלק בארגון שהאדמור הזקן הקים והרבי ייסד, ארגון שפועל בכל עיר ובכל העולם ודואג לרווחת היולדת. </p>
+                 <p>אני רואה את ההתנדבות הזו כשליחות של הרבי ממש ושואבת ממנה הרבה כוח, סיפוק ושמחה. </p>
+                 <p className="marginB">להיות שליחה של הרבי זו זכות ובארגון 'שפרה ופועה' הזכות גדולה עוד יותר. והזכייה היא שלי!!!</p>
+                </>
+              )}
+              {showMore2 ? (
+                <div className="readmore-btn">
+                  <button onClick={handleClick2}>קראו עוד </button>
+                </div>
+              ) : (
+                <div className="readmore-btn">
+                  <button onClick={handleClick2}>קראו עוד </button>
+                </div>
+              )}
+            </div>
+            <Image
+                src="/assets/ourvolunteers.jpg"
+                 alt="Image"
+                 className="image-child"
+                width={500}
+                height={429}
+              />
+          </div>
         </div>
       </div>
-      <ExcitingEveryTime/>
-      <ActivityStreets/>
+      <ExcitingEveryTime />
+      <ActivityStreets />
     </div>
   );
 };

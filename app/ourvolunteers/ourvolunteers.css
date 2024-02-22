@@ -82,6 +82,7 @@
     width: 100%;
     max-width: 1140px;
     margin: 3rem auto;
+    padding: 0 6px;
 }
 
 .ourvolunteers-content-container h2 {
@@ -89,6 +90,7 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
 }
 
 .slider-container {
@@ -100,4 +102,155 @@
 
 .slider-container h2 {
     text-align: end;
+}
+
+.donation-link-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.link-dontaion-page {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #f5b0b0;
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.link-dontaion-page:hover {
+    background-color: #73dedb;
+    transition: background-color 0.3s ease;
+}
+
+
+.volunteers-boxes {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.volunteers-box {
+    display: flex;
+}
+
+.box-content {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, rgba(245, 176, 176, 0.1) 0%, #ffffff 100%);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    text-align: right;
+    padding: 1rem;
+}
+
+.box-content h5 {
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--dark_black_200);
+}
+
+.box-content h3 {
+    margin: 15px 35px 0px -80px;
+    padding: .7rem 2rem;
+    background-color: #ffffff;
+    color: #73dedb;
+    font-size: 3.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.box-content .paraghra {
+    margin: 2rem -80px 0px 35px;
+     background-color: #ffffff;
+    color: #73dedb;
+    font-size: 3.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    z-index: 1;
+    position: relative;
+}
+
+.lines {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.lines .line {
+    border-top-style: solid;
+    border-top-width: 1px;
+    width: 6%;
+}
+
+.box-content h2 {
+    text-align: right;
+    margin-bottom: 2rem;
+    color: #3a3a3a;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.box-content p {
+    line-height: 29px;
+    text-align: right;
+    color: #3a3a3a;
+    ;
+    font-size: 16px;
+}
+
+.box-content button {
+    align-self: flex-start;
+    background-color: #73dedb;
+    padding: 6px 20px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.box-content button:hover {
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+.marginB {
+    margin-bottom: 2rem;
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 900px){
+    .volunteers-box {
+        flex-direction: column;
+    }
+    .image-child{
+        width: 100%;
+    }
+    .box-content .paraghra {
+        margin: 2rem 0px 0px 35px;
+    }
+    .box-content h3 {
+        margin: 15px 35px 0px  0px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .box-content h3 {
+        margin: 1rem 0px;
+        font-size: 1.5rem;
+    }
+    .box-content .paraghra {
+        margin: 2rem 0;
+        font-size: 1.5rem;
+    }
+    .image-child{
+        height: 100%;
+        min-height: 250px;
+    }
 }

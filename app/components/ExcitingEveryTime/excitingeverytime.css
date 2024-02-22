@@ -83,6 +83,9 @@
     .excitingeverytime-boxes {
         justify-content: center;
     }
+    .excitingeverytime-box .content {
+        font-size: 1rem;
+    }
 }
 @media screen and (min-width: 786px) {
     .excitingeverytime-box {
