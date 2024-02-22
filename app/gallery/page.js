@@ -1,9 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { ActivityStreets } from "../components/ActivityStreets/ActivityStreets";
-import ExcitingEveryTime from "../components/ExcitingEveryTime/ExcitingEveryTime";
-import "./gallery.css";
+ import "./gallery.css";
+import Image from "next/image";
+import ImagesGallery from "../components/ImagesGallery/ImagesGallery";
 
 const Gallery = () => {
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
   return (
     <>
       <section className="gallery-container">
@@ -29,8 +36,42 @@ const Gallery = () => {
           <h3> גלריית תמונות</h3>
         </div>
       </section>
-      <ExcitingEveryTime />
-      <ActivityStreets />
+      <div className="gallery-content">
+        <div className="gallerytabs-content">
+          {/* tabs */}
+          <div className="gallery-tabs">
+            <button
+              className={activeTab === 0 ? "active" : ""}
+              onClick={() => handleTabClick(0)}
+            >
+              המתוקים שלנו
+            </button>
+            <button
+              className={activeTab === 1 ? "active" : ""}
+              onClick={() => handleTabClick(1)}
+            >
+              גלריית אירועים
+            </button>
+          </div>
+          {/* tabs data */}
+          <div className="gallery-tabs-content">
+            {/* tab 1 data */}
+            <div style={{ display: activeTab === 0 ? "block" : "none" }} className="tab-title tab1">
+               <h1>גלריית אירועים</h1>
+               <p>יעלה ב״ה בקרוב</p>
+            </div>
+            {/* tab 2 data */}
+            <div style={{ display: activeTab === 1 ? "block" : "none" }} className="tab-title tab2">
+               <h1>המתוקים שלנו</h1>
+               {/* Images */}
+               <div>
+                 <ImagesGallery/>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <ActivityStreets />
     </>
   );
 };
