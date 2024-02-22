@@ -39,6 +39,29 @@
   width: 16px;
   height: 16px;
 }
+.sub-links {
+  display: none;
+}
+.expandable li{
+   
+}
+
+.expandable:hover .sub-links {
+  background-color: white;
+  width: 150px;
+  text-align: right;
+  padding: .5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+   position: absolute;
+   right: 0;
+   }
+  .expandable .sub-links li .sub-link{
+   font-size: 15px;
+
+ }
+
 
 .links-container {
   display: flex;

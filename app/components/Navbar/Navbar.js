@@ -4,6 +4,8 @@ import "./navbar.css";
 import { TiHeartFullOutline } from "react-icons/ti";
 import { IoMenu } from "react-icons/io5";
 import Image from "next/image";
+import { TiArrowSortedDown } from "react-icons/ti";
+
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,24 +42,21 @@ const Navbar = () => {
       </div>
       <div className="links-container">
         <ul className="links">
-          <li>
-            <a href="/contact">צרו קשר</a>
+          <li><a href="/contact">צרו קשר</a></li>
+          <li><a href="/confidentiality">חסויות</a></li>
+          <li><a href="/thanks">תודות</a></li>
+          <li><a href="/servicesmother">השירות ליולדת</a></li>
+          <li style={{position:'relative',}} className="expandable"><a href="/about"> <TiArrowSortedDown style={{paddingTop:'.4rem' }}/>
+אודותינו </a>
+            <ul className="sub-links">
+              <li><a href="/about" className="sub-link">שפרה ופועה רחובות</a></li>
+              <li><a href="/ourvolunteers" className="sub-link">המתנדבות שלנו</a></li>
+              <li><a href="/ourproduct" className="sub-link">המוצרים שלנו</a></li>
+              <li><a href="/gallery" className="sub-link">גלריית תמונות</a></li>
+              <li><a href="/ohelhaya " className="sub-link">אוהל חיה – רחובות</a></li>
+           </ul>
           </li>
-          <li>
-            <a href="/confidentiality">חסויות</a>
-          </li>
-          <li>
-            <a href="/thanks">תודות</a>
-          </li>
-          <li>
-            <a href="/servicesmother">השירות ליולדת</a>
-          </li>
-          <li>
-            <a href="/about">אודותינו</a>
-          </li>
-          <li>
-            <a href="/">דף הבית</a>
-          </li>
+          <li><a href="/">דף הבית</a></li>
         </ul>
         <div className="">
           <a href="/">
@@ -72,26 +71,23 @@ const Navbar = () => {
         </div>
         {isMenuOpen && (
           <div className="menu-toggle ">
-          <ul className="links-menu">
-          <li>
-            <a href="/contact">צרו קשר</a>
+            <ul className="links-menu">
+              <li><a href="/contact">צרו קשר</a></li>
+              <li><a href="/confidentiality">חסויות</a></li>
+              <li><a href="/thanks">תודות</a></li>
+              <li><a href="/servicesmother">השירות ליולדת</a></li>
+              <li style={{position:'relative',}} className="expandable"><a href="/about"> <TiArrowSortedDown style={{paddingTop:'.4rem' }}/>
+אודותינו </a>
+            <ul className="sub-links">
+              <li><a href="/about" className="sub-link">שפרה ופועה רחובות</a></li>
+              <li><a href="/ourvolunteers" className="sub-link">המתנדבות שלנו</a></li>
+              <li><a href="/ourproduct" className="sub-link">המוצרים שלנו</a></li>
+              <li><a href="/gallery" className="sub-link">גלריית תמונות</a></li>
+              <li><a href="/ohelhaya " className="sub-link">אוהל חיה – רחובות</a></li>
+           </ul>
           </li>
-          <li>
-            <a href="/confidentiality">חסויות</a>
-          </li>
-          <li>
-            <a href="/thanks">תודות</a>
-          </li>
-          <li>
-            <a href="/servicesmother">השירות ליולדת</a>
-          </li>
-          <li>
-            <a href="/about">אודותינו</a>
-          </li>
-          <li>
-            <a href="/">דף הבית</a>
-          </li>
-        </ul>
+              <li><a href="/">דף הבית</a></li>
+            </ul>
           </div>
         )}
       </div>
