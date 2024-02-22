@@ -87,17 +87,11 @@ const Navbar = () => {
               <li><a href="/confidentiality">חסויות</a></li>
               <li><a href="/thanks">תודות</a></li>
               <li><a href="/servicesmother">השירות ליולדת</a></li>
-              <li style={{ position: 'relative' }} className="expandable" onClick={toggleSubLinks}><TiArrowSortedDown /> <a href="/about"> אודותינו</a>
-            {showSubLinks && (
-                <ul className="sub-links">
-                    <li><a href="/about" className="sub-link">שפרה ופועה רחובות</a></li>
-                    <li><a href="/ourvolunteers" className="sub-link">המתנדבות שלנו</a></li>
-                    <li><a href="/ourproduct" className="sub-link">המוצרים שלנו</a></li>
-                    <li><a href="/gallery" className="sub-link">גלריית תמונות</a></li>
-                    <li><a href="/ohelhaya" className="sub-link">אוהל חיה – רחובות</a></li>
-                </ul>
-            )}
-        </li>
+              <li><a href="/about" className="sub-link">שפרה ופועה רחובות</a></li>
+              <li><a href="/ourvolunteers" className="sub-link">המתנדבות שלנו</a></li>
+              <li><a href="/ourproduct" className="sub-link">המוצרים שלנו</a></li>
+              <li><a href="/gallery" className="sub-link">גלריית תמונות</a></li>
+              <li><a href="/ohelhaya" className="sub-link">אוהל חיה – רחובות</a></li>
               <li><a href="/">דף הבית</a></li>
             </ul>
           </div>
