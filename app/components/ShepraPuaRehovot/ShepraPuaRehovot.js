@@ -24,7 +24,7 @@ const ShepraPuaRehovot = () => {
               רחובות. ארגון האם עוסק בפעילויות מבורכות רבות, החל משיעורי תורה
               והתוועדויות ועד ועדת ביקור חולים.
             </p>
-            <Link href="/" className="link-page">
+            <Link href="/ohelhaya" className="link-page">
               קראו עוד
             </Link>
           </div>
@@ -40,7 +40,7 @@ const ShepraPuaRehovot = () => {
               המתנדבות מגיעות מתוך הקהילה. הן מכינות אוכל, מסיעות אותו, מגייסות
               תרומות וממש מעניקות את הלב והנשמה. אנו מזמינות אתכם להכיר אותן.
             </p>
-            <Link href="/" className="link-page">
+            <Link href="/ourvolunteers" className="link-page">
               קראו עוד
             </Link>
           </div>
@@ -56,7 +56,7 @@ const ShepraPuaRehovot = () => {
               ארוחות בוקר וצהריים, סעודות שבת, סיוע בבית עם הילדים כולל שירות
               בייביסיטר, אוזן קשבת, משחקייה ועוד! אנחנו כאן בשביל היולדות.
             </p>
-            <Link href="/" className="link-page">
+            <Link href="/servicesmother" className="link-page">
               קראו עוד
             </Link>
           </div>
@@ -90,12 +90,13 @@ const ShepraPuaRehovot = () => {
             preserveAspectRatio="none"
           >
             <path
-              class="elementor-shape-fill" fill="white"
+              class="elementor-shape-fill"
+              fill="white"
               d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
 	c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
 	c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
             ></path>
-          </svg> 
+          </svg>
         </div>
         <div className="content-sheprapuarehovot">
           <h3>
