@@ -29,28 +29,36 @@
     font-size: 17px;
     border: none;
     cursor: pointer;
-    padding: .2rem;
-    color: black;
-    background-color: transparent;
-    padding: 5px 10px;
-    margin: 8px 5px;
-}
-
-.donation-tab.active1   {
+      background-color: transparent;
+    outline: none;
+    padding: 10px 10px;
     border-radius: 2em;
-    background-color: var(--dark_black_400);
+ }
+
+.donation-tab.active button{
+    transition: all .3s linear;
+    
     color: white;
 }
 
+
+.donation-tab.active1   {
+    transition: all .3s linear;
+    border-radius: 1em;
+    background-color: var(--dark_black_400);
+}
+
 .donation-tab.active2   {
-    border-radius: 2em;
+    transition: all .3s linear;
+    border-radius: 1em;
     background-color: var(--red_100);
     color: white;
 }
 
 .donation-tab.active3   {
-    border-radius: 2em;
-    background-color: var(--yellow);
+    transition: all .3s linear;
+    border-radius: 1em;
+     background-color: var(--yellow);
     color: white;
 }
 
