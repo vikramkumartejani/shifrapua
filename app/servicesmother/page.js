@@ -2,6 +2,7 @@ import React from "react";
 import ExcitingEveryTime from "../components/ExcitingEveryTime/ExcitingEveryTime";
 import { ActivityStreets } from "../components/ActivityStreets/ActivityStreets";
 import "./servicesmother.css";
+import ServicesMotherContent from "../components/ServicesMotherContent/ServicesMotherContent";
 
 const ServicesMother = () => {
   return (
@@ -32,6 +33,7 @@ const ServicesMother = () => {
       <div className="content-servicemother">
         <p>שפרה ופועה ברחובות פועל למעלה מ-40 שנה במטרה לסייע ליולדות להתאושש מהלידה ולהיטב עם היולדות בתקופה המאתגרת שבסמוך ללידה. לאור סקר גדול ומקיף שנערך לאחרונה בקרב יולדות נוספו שירותים אטרקטיביים נוספים לבקשת היולדות היקרות שלנו. כשהיולדת מקבלת את העזרה המתאימה היא יכולה למלא תפקידה כאמא שמחה ורגועה יותר אשר משרה אוירה רגועה בביתה.</p>
       </div>
+      <ServicesMotherContent/>
       <div style={{padding: '2rem 0'}}>
         <ExcitingEveryTime />
       </div>
