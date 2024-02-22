@@ -121,8 +121,9 @@
     background-color: white;
     position: absolute;
     width: 100%;
-    padding: 15px;
-     font: 20px;
+    gap: 1rem;
+    padding: 20px;
+     font-size: 20px;
 }
 .menu-toggle .links-menu ul li a { 
   color: white;

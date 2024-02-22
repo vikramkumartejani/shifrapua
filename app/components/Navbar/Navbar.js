@@ -12,6 +12,9 @@ const Navbar = () => {
 
   const [isMenuOpen, setMenuOpen] = useState(false);
 
+  const [showSubLinks, setShowSubLinks] = useState(false);
+
+
   const handleToggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
@@ -29,6 +32,12 @@ const Navbar = () => {
     };
   }, []);
 
+
+
+
+  const toggleSubLinks = () => {
+      setShowSubLinks(!showSubLinks);
+  };
   return (
     <div className={`nav-container ${isScrolled ? "scrolled" : ""}`}>
       <div className="menu-container">
@@ -46,16 +55,29 @@ const Navbar = () => {
           <li><a href="/confidentiality">חסויות</a></li>
           <li><a href="/thanks">תודות</a></li>
           <li><a href="/servicesmother">השירות ליולדת</a></li>
-          <li style={{position:'relative',}} className="expandable"><a href="/about"> <TiArrowSortedDown style={{paddingTop:'.4rem' }}/>
-אודותינו </a>
-            <ul className="sub-links">
-              <li><a href="/about" className="sub-link">שפרה ופועה רחובות</a></li>
-              <li><a href="/ourvolunteers" className="sub-link">המתנדבות שלנו</a></li>
-              <li><a href="/ourproduct" className="sub-link">המוצרים שלנו</a></li>
-              <li><a href="/gallery" className="sub-link">גלריית תמונות</a></li>
-              <li><a href="/ohelhaya " className="sub-link">אוהל חיה – רחובות</a></li>
-           </ul>
-          </li>
+          <li style={{ position: 'relative' }} className="expandable" onClick={toggleSubLinks}><TiArrowSortedDown/> <a href="/about"> אודותינו</a>
+            {showSubLinks && (
+                <ul className="sub-links">
+                    <li><a href="/about" className="sub-link">שפרה ופועה רחובות</a></li>
+                    <li><a href="/ourvolunteers" className="sub-link">המתנדבות שלנו</a></li>
+                    <li><a href="/ourproduct" className="sub-link">המוצרים שלנו</a></li>
+                    <li><a href="/gallery" className="sub-link">גלריית תמונות</a></li>
+                    <li><a href="/ohelhaya" className="sub-link">אוהל חיה – רחובות</a></li>
+                </ul>
+            )}
+        </li>
+          <li className="expandable" onClick={toggleSubLinks}>
+                <a href="/about">אודותינו</a>
+                {showSubLinks && (
+                    <ul className="sub-links">
+                        <li><a href="/team">צוות</a></li>
+                        <li><a href="/mission">משימה</a></li>
+                        <li><a href="/history">היסטוריה</a></li>
+                        <li><a href="/values">ערכים</a></li>
+                        <li><a href="/awards">פרסים</a></li>
+                    </ul>
+                )}
+            </li>
           <li><a href="/">דף הבית</a></li>
         </ul>
         <div className="">
@@ -76,16 +98,17 @@ const Navbar = () => {
               <li><a href="/confidentiality">חסויות</a></li>
               <li><a href="/thanks">תודות</a></li>
               <li><a href="/servicesmother">השירות ליולדת</a></li>
-              <li style={{position:'relative',}} className="expandable"><a href="/about"> <TiArrowSortedDown style={{paddingTop:'.4rem' }}/>
-אודותינו </a>
-            <ul className="sub-links">
-              <li><a href="/about" className="sub-link">שפרה ופועה רחובות</a></li>
-              <li><a href="/ourvolunteers" className="sub-link">המתנדבות שלנו</a></li>
-              <li><a href="/ourproduct" className="sub-link">המוצרים שלנו</a></li>
-              <li><a href="/gallery" className="sub-link">גלריית תמונות</a></li>
-              <li><a href="/ohelhaya " className="sub-link">אוהל חיה – רחובות</a></li>
-           </ul>
-          </li>
+              <li style={{ position: 'relative' }} className="expandable" onClick={toggleSubLinks}><TiArrowSortedDown /> <a href="/about"> אודותינו</a>
+            {showSubLinks && (
+                <ul className="sub-links">
+                    <li><a href="/about" className="sub-link">שפרה ופועה רחובות</a></li>
+                    <li><a href="/ourvolunteers" className="sub-link">המתנדבות שלנו</a></li>
+                    <li><a href="/ourproduct" className="sub-link">המוצרים שלנו</a></li>
+                    <li><a href="/gallery" className="sub-link">גלריית תמונות</a></li>
+                    <li><a href="/ohelhaya" className="sub-link">אוהל חיה – רחובות</a></li>
+                </ul>
+            )}
+        </li>
               <li><a href="/">דף הבית</a></li>
             </ul>
           </div>
